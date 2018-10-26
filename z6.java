@@ -3,18 +3,16 @@ package l6;
 public class z6 {
     public static void main(String[] args) {
         int a[] = new int[]{1, 3, -1, 2, 5, 19, 7, 6, 9, -7};
-        int max =(int)Double.NEGATIVE_INFINITY; ;
-        int min =(int)Double.POSITIVE_INFINITY;;
+        int max =(int)Double.NEGATIVE_INFINITY;
+        int min =(int)Double.POSITIVE_INFINITY;
         int indexMin = a.length-1;
         int indexMax =indexMin;
-        for (int i = 0; i < a.length; i++)
-            System.out.print(a[i] + "");
-        System.out.println();
         for (int i = 0; i < a.length; i++) {
             if (a[i] > max) {
                 max = a[i];
                 indexMax = i;
             }
+
             if (a[i] < min) {
                 min = a[i];
                 indexMin = i;
